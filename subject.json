@@ -28,7 +28,7 @@
       "Image upload using multer",
       "Image upload using base64",
       "Connecting Express to mysql",
-      "Connecting Express to Oracle",
+      "Connecting Express to Oracle"
     ]
   },
   {
