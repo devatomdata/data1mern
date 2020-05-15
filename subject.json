@@ -29,15 +29,12 @@
       "Image upload using base64",
       "Connecting Express to mysql",
       "Connecting Express to Oracle",
-      ""
     ]
   },
   {
     "name": "Learn ReactJS",
     "topics": [
-      "introduction",
-      "installation",
-      "Stateful and stateless"
+      ""
     ]
   },
   {
