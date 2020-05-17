@@ -166,6 +166,17 @@
             "Other Hooks",
             "function Example() {\n  const locale = useContext(LocaleContext);\n  const theme = useContext(ThemeContext);\n  // ...\n}\n\n\n\n,function Todos() {\n  const [todos, dispatch] = useReducer(todosReducer);\n  //...",
             "There are a few less commonly used built-in Hooks that you might find useful. For example, useContext lets you subscribe to React context without introducing nesting:\n\nfunction Example() {\n  const locale = useContext(LocaleContext);\n  const theme = useContext(ThemeContext);\n  // ...\n}\nAnd useReducer lets you manage local state of complex components with a reducer:\n\nfunction Todos() {\n  const [todos, dispatch] = useReducer(todosReducer);\n  // ..."
+        ],
+        "Connecting ReactJs with NodeJs": [
+            "Create React and node files separately",
+            "npx create-react-app client\ncd client\nnpm start\n\n\nmkdir hello-cli\ncd hello-cli\nnpm init\nnpm install//install the required packages\nnode file.js",
+            "After creating files for react app and nodejs app , write the code and run both and different port numbers ",
+            "Connecting the React Client to the Express API",
+            "constructor(props) {\n    super(props);\n    this.state = { apiResponse: \"\" };\n}\n\ncallAPI() {\n//fetch will contain the url which is running at node server\n    fetch(\"http://localhost:9000/testAPI\")\n        .then(res => res.text())\n        .then(res => this.setState({ apiResponse: res }));\n}\n\ncomponentWillMount() {\n    this.callAPI();\n}",
+            "",
+            "ERROR ??",
+            "npm install --save cors\nvar cors = require(\"cors\");\napp.use(cors());",
+            "We are almost done. But if we start both our apps (client and API) and navigate to http://localhost:3000/, you still won't find the expected result displayed on the page. If you open chrome developer tools, you will find why. In the console, you will see this error:\n\nFailed to load http://localhost:9000/testAPI: No ‘Access-Control-Allow-Origin’ header is present on the requested resource. Origin ‘http://localhost:3000' is therefore not allowed access. If an opaque response serves your needs, set the request’s mode to ‘no-cors’ to fetch the resource with CORS disabled.\nThis is simple to solve. We just have to add CORS to our API to allow cross-origin requests. Let’s do just that. You should check here to find out more about CORS."
         ]
     }
 ]
