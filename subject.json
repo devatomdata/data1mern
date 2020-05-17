@@ -38,7 +38,20 @@
       "Setup guide",
       "Introduction to JSX",
       "Components",
-      "Local Component State"
+      "Local Component State",
+      "Props in React",
+      "Lists and keys",
+      "Component API",
+      "Lifecycle Methods",
+      "Event Handling",
+      "Conditional Rendering",
+      "Preventing component from rendering",
+      "Forms",
+      "React Router",
+      "Higher Order Components",
+      "Refs and the DOM",
+      "Hooks in React - Part 1",
+      "Hooks in React - Part 2"
     ]
   },
   {
