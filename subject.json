@@ -34,7 +34,11 @@
   {
     "name": "Learn ReactJS",
     "topics": [
-      "Introduction to React"
+      "Introduction to React",
+      "Setup guide",
+      "Introduction to JSX",
+      "Components",
+      "Local Component State"
     ]
   },
   {
